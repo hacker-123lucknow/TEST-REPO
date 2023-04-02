@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafafa"
+    tools:context=".Addtransactionactivity">
+    <RelativeLayout
+        android:id = "@+id/custom_toolbar_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height = "?actionBarSize"
+        android:background="@color/red">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#24389E"
+            android:text="ADD Transaction"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+    </RelativeLayout>
+    <EditText
+        android:id = "@+id/user_amount_add"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="number"
+        android:hint = "AMOUNT"
+        android:layout_marginTop = "30dp"
+        android:padding="15dp"
+        android:background="@drawable/edit_text_backgd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id = "@+id/user_note_add"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint = "NOTE"
+        android:inputType = "textMultiLine"
+        android:textAlignment="textStart"
+        android:gravity ="start"
+        android:layout_marginTop = "8dp"
+        android:padding="15dp"
+        android:background="@drawable/edit_text_backgd"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id = "@+id/expense_check_box"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text = "Expense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id = "@+id/income_check_box"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Income"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id = "@+id/btn_update_transaction"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:text = "UPDATE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id = "@+id/btn_delete_transaction"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:text = "DELETE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
